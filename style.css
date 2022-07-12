@@ -269,7 +269,9 @@ a:link {
    margin-bottom: 1rem;
 }
 .register-email input:focus, .register-email input:focus , 
-.register-name input:focus, .register-password input:focus{
+.register-name input:focus, .register-password input:focus,
+.add-name input:focus, .add-title input:focus, .add-date input:focus,
+.platform-type input:focus{
    outline: var(--green-bg);
    border: solid var(--green-text) 2px;
 }
