@@ -15,12 +15,14 @@
          <!-- Left Column -->
          <div class="main-left-col">
             <div class="logo">
-               <img
-                  src="images/to-do-list.png"
-                  alt="img"
-                  width="120"
-                  height="120"
-               />
+               <a href="/index.html">
+                  <img
+                     src="images/to-do-list.png"
+                     alt="img"
+                     width="120"
+                     height="120"
+                  />
+               </a>
             </div>
             <div class="left-col-options">
                <div class="home">
@@ -62,14 +64,18 @@
                   <!-- <span style="margin-left: 10px">Search</span> -->
                </div>
                <div class="right-search">
-                  <img src="images/user.png" alt="img" />
+                  <a href="/create-user.html">
+                     <img src="images/user.png" alt="img" />
+                  </a>
                </div>
                <!-- <i class="fa-solid fa-magnifying-glass"></i>
                <input class="search-box" type="text" placeholder="Search" /> -->
             </div>
             <!-- Add Task Section -->
             <div class="add-task-item">
-               <i class="fa-solid fa-plus add-item"></i>
+               <button class="add-item">
+                  <i class="fa-solid fa-plus add-item"></i>
+               </button>
             </div>
             <!-- Lists of Tasks | 3 Column -->
             <div class="list-task-body">
@@ -182,12 +188,109 @@
                         </div>
                      </div>
                   </div>
+                  <!-- Task Item Container -->
+                  <div class="task-item-container">
+                     <!-- 1 -->
+                     <div class="item-header">
+                        <span class="item-title">Layout Design</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                     </div>
+                     <!-- 2 -->
+                     <div class="item-assign">
+                        <div class="assign">
+                           <span>Janeki</span>
+                        </div>
+                        <div class="deadline">
+                           <i class="fa-solid fa-calendar"></i>
+                           <span>July 20</span>
+                        </div>
+                     </div>
+                     <!-- 3 -->
+                     <div class="item-type">
+                        <span class="platform">WEB</span>
+                        <span class="stack">FRONTEND</span>
+                     </div>
+                     <!-- 4 -->
+                     <div class="item-last">
+                        <div class="user-img">
+                           <img src="images/user.png" alt="img" />
+                        </div>
+                        <div class="item-state">
+                           <span>NONE</span>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Task Item Container -->
+                  <div class="task-item-container">
+                     <!-- 1 -->
+                     <div class="item-header">
+                        <span class="item-title">Layout Design</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                     </div>
+                     <!-- 2 -->
+                     <div class="item-assign">
+                        <div class="assign">
+                           <span>Janeki</span>
+                        </div>
+                        <div class="deadline">
+                           <i class="fa-solid fa-calendar"></i>
+                           <span>July 20</span>
+                        </div>
+                     </div>
+                     <!-- 3 -->
+                     <div class="item-type">
+                        <span class="platform">WEB</span>
+                        <span class="stack">FRONTEND</span>
+                     </div>
+                     <!-- 4 -->
+                     <div class="item-last">
+                        <div class="user-img">
+                           <img src="images/user.png" alt="img" />
+                        </div>
+                        <div class="item-state">
+                           <span>NONE</span>
+                        </div>
+                     </div>
+                  </div>
                </div>
                <!-- Right Col -->
                <div class="right-task-col">
                   <div class="task-header">
                      <span class="task-state"> Completed (05) </span>
                      <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+
+                  <!-- Task Item Container -->
+                  <div class="task-item-container">
+                     <!-- 1 -->
+                     <div class="item-header">
+                        <span class="item-title">Layout Design</span>
+                        <i class="fa-solid fa-ellipsis"></i>
+                     </div>
+                     <!-- 2 -->
+                     <div class="item-assign">
+                        <div class="assign">
+                           <span>Janeki</span>
+                        </div>
+                        <div class="deadline">
+                           <i class="fa-solid fa-calendar"></i>
+                           <span>July 20</span>
+                        </div>
+                     </div>
+                     <!-- 3 -->
+                     <div class="item-type">
+                        <span class="platform">WEB</span>
+                        <span class="stack">FRONTEND</span>
+                     </div>
+                     <!-- 4 -->
+                     <div class="item-last">
+                        <div class="user-img">
+                           <img src="images/user.png" alt="img" />
+                        </div>
+                        <div class="item-state">
+                           <span>NONE</span>
+                        </div>
+                     </div>
                   </div>
                   <!-- Task Items -->
                   <div class="task-item-container">
@@ -256,5 +359,57 @@
             </div>
          </div>
       </section>
+      <!-- Add Task Modal -->
+      <div class="add-item-modal">
+         <div class="add-item-modal-content">
+            <div class="add-item-container">
+               <div class="add-item-header">
+                  <span>Add Task</span>
+               </div>
+               <div class="add-name">
+                  <div class="register-user">
+                     <span>User</span>
+                  </div>
+                  <input type="text" />
+               </div>
+               <div class="add-title">
+                  <div class="register-title">
+                     <span>Title</span>
+                  </div>
+                  <input type="text" />
+               </div>
+               <div class="add-date">
+                  <div class="register-date">
+                     <span>Date</span>
+                  </div>
+                  <input type="date" name="deadline" id="add-date" />
+               </div>
+               <div class="add-type">
+                  <div class="register-type">
+                     <span>Type</span>
+                  </div>
+                  <div class="platform-type">
+                     <input
+                        class="type-platform"
+                        type="text"
+                        placeholder="Platform"
+                     />
+                     <input
+                        class="type-layer"
+                        type="text"
+                        placeholder="Layer"
+                     />
+                  </div>
+               </div>
+               <div class="confirm-task">
+                  <button onclick="hide()">Confirm</button>
+                  <div class="small">
+                     <small>click the button to close </small>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="/main.js"></script>
    </body>
 </html>

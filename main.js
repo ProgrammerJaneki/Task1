@@ -1,5 +1,16 @@
-const element = document.querySelector(".click-home");
+function hide() {
+   const element = document.querySelector(".add-item-modal");
+   element.style.display = "none";
+}
+const modal = document.querySelector(".add-item-modal");
+// modal.addEventListener("click", function(){
+//    modal.style.display = "none";
+// } )
 
-element.addEventListener("click", function() {
-   window.location.href = "https://www.geeksforgeeks.org/";
+
+const addTask = document.querySelector(".add-item");
+
+addTask.addEventListener("click", function(){
+   modal.style.display = "block";
 })
+

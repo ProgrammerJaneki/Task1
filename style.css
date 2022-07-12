@@ -66,10 +66,10 @@ a:link {
 .task span, .log span {
    padding-left: 8px;
 }
-.task-media, .log-media {
+/* .task-media, .log-media {
    transform: translateX(40px);
    border-left: solid var(--green-bg) 10px;
-}
+} */
 .left-col-options div:hover {
    transform: translateX(40px);
    /* border-radius: 10px; */
@@ -373,9 +373,85 @@ a:link {
    grid-column-start: 5;
    grid-column-end: 6;
 }
+.add-item-modal {
+   display: none;
+   color: black;
+   position: fixed; /* Stay in place */
+   z-index: 11; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0,0,0);  */
+  background-color: rgba(0, 0, 0, 0.671); /* Black w/ opacity */
+}
+.add-item-modal-content {
+   background-color: #fefefe;
+   border-radius: 10px;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   height: 600px;
+   width: 30%;
+}
+/* .add-item-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+} */
+.add-item-header {
+   text-align: center;
+   /* background-color: lightgreen; */
+   font-weight: bold;
+   font-size: 30px;
+}
+.register-user, .register-title, .register-date, .register-type  {
+   display: flex;
+   flex-direction: column;
+   /* background-color: lightcoral; */
+   font-size: 1rem;
+   padding: 0.4rem 0;
+   /* padding: 0.5rem; */
+}
+.add-name input, .add-title input, .add-date input {
+   border: solid rgb(224, 208, 208) 2px;
+   border-radius: 5px;
+   height: 2rem;
+   padding: 1rem 0.2rem;
+   width: 100%;
+}
+.platform-type input {
+   border: solid rgb(224, 208, 208) 2px;
+   border-radius: 5px;
+   height: 2rem;
+   width: 45%;
+   padding: 1rem 0.2rem;
+}
+.type-layer {
+   margin-left: 3.2rem;
+}
+.confirm-task button {
+   background-color: var(--green-bg);
+   border: hidden;
+   /* border: solid var(--green-bg) 2px; */
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+   margin-top: 1rem;
+   width: 100%;
+   height: 2.5rem;
+   transition: 0.6s ease;
+}
+.small {text-align: center;}
+small {
+   font-size: 10px;
+   color: #888;
+}
 @media screen and (max-width: 1440px) {
    .main-body {
-      /* background-color: lightgreen; */
+      height: 200vh;
    }
    .logo {
       margin: 1.5rem 0 2.5rem 0;
@@ -399,10 +475,10 @@ a:link {
    transform: translateX(20px);
    border-left: solid var(--green-bg) 5px;
    }
-   .task-media, .log-media {
+   /* .task-media, .log-media {
       transform: translateX(20px);
       border-left: solid var(--green-bg) 5px;
-   }
+   } */
 
    /* Create User Page */
    .create-user-container {
@@ -422,5 +498,13 @@ a:link {
    /* Activity Log */
    .log-container {
       font-size: 1.5rem;
+   }
+   /* Add Task Modal */
+   .add-item-modal-content {
+      width: 30%;
+      height: 400px;
+   }
+   .type-layer {
+      margin-left: 2.2rem;
    }
 }
